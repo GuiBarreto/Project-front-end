@@ -32,6 +32,7 @@ main {
     max-width: 900px;
     display: flex;
     position: relative;
+    z-index: -1;
 }
 
 figure {
@@ -43,7 +44,7 @@ figure {
 
 
 img.logo {
-    margin-top: 40px;
+    margin-top: 30px;
     margin-left: 30px;
     margin-bottom: 30px;
     
@@ -82,21 +83,26 @@ p {
     height: 28px; 
 }
 
+.dp-menu {
+    background-color: var(--primary-color);
+}
+
+.menu {
+    margin-left: 190px;
+}
 
 .dp-menu ul {
     list-style-type: none;
-    
+     
 }
 
-.dp-menu ul {
-    background-color: var(--primary-color); 
+.dp-menu a {
+    width: 110px;
 }
 
 .dp-menu ul li {
-    display: inline;
+    display: inline-block;
     position: relative;
-    justify-items: center;
-    
 }
 
 .dp-menu ul li a {
@@ -104,8 +110,10 @@ p {
     text-decoration: none;
     display: inline-block;
     padding: 10px;
-    max-width: 100px;
     text-align: center; 
+    text-transform: uppercase;
+    position: relative;
+    nav-left: inherit;
 }
 
 .dp-menu ul li a:hover {
@@ -117,13 +125,14 @@ p {
 .dp-menu li li:hover a{
     background-image: url(../images/caret.png);
     background-repeat: no-repeat;
+    background-position: 10%;
     cursor: none;
 }
 
 .dp-menu ul ul {
     display: none;
     left: 0;
-    position: absolute;
+    position: absolute;    
 }
 
 .dp-menu ul li:hover ul {
