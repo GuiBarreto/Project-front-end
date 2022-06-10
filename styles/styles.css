@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+:root {
+    --primary-color: rgba(13, 66, 108);
+    --secondary-color:rgba(25, 105, 179);
+    --white-color: rgba(255, 255, 255)
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--white-color);
+}
+
+header {
+    text-align: center;
+    margin: auto;
+    display: block;
+    max-width: 900px;
+    height: 120px;
+
+}
+
+main {
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+    max-width: 900px;
+    display: flex;
+    position: relative;
+}
+
+figure {
+    padding: 10px;
+    max-width: 200px;
+    z-index: -1;
+}
+
+
+
+img.logo {
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    
+}
+
+figcaption {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+p {
+    color: var(--primary-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+}
+
+.logoFront {
+    float: left;
+
+}
+
+.logoSocial {
+    float: right;
+    margin-top: 10px;
+    padding-right: 5px;
+}
+
+.input {
+    background-image: url(../images/search-icon.png);
+    background-repeat: no-repeat, repeat;
+    background-position: right;
+    margin-top: 10px;
+    width: 520px;
+    height: 28px; 
+}
+
+
+.dp-menu ul {
+    list-style-type: none;
+    
+}
+
+.dp-menu ul {
+    background-color: var(--primary-color); 
+}
+
+.dp-menu ul li {
+    display: inline;
+    position: relative;
+    justify-items: center;
+    
+}
+
+.dp-menu ul li a {
+    color: var(--white-color);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    max-width: 100px;
+    text-align: center; 
+}
+
+.dp-menu ul li a:hover {
+    background-color: var(--secondary-color);
+    background-position: left;
+    display: inline-block;
+}
+
+.dp-menu li li:hover a{
+    background-image: url(../images/caret.png);
+    background-repeat: no-repeat;
+    cursor: none;
+}
+
+.dp-menu ul ul {
+    display: none;
+    left: 0;
+    position: absolute;
+}
+
+.dp-menu ul li:hover ul {
+    display: block;
+    text-align: center;
+    background-color: var(--secondary-color);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.418);
+}
+
+.dp-menu ul ul li {
+    display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+
