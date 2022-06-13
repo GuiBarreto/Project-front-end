@@ -3,6 +3,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    
 }
 
 :root {
@@ -10,16 +11,13 @@
     --secondary-color:rgba(25, 105, 179);
     --white-color: rgba(255, 255, 255);
     --footer-color: rgb(37, 151, 185);
-    --cor1: rgb(255, 0, 0);
-    --cor2: rgb(0, 255, 34);
-    --cor3: yellow;
 }
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--white-color);
-    height: 100%;
-    
+    background-color: var(--white-color);  
+    min-height: 100vh;  
+    min-width: 100%;
 }
 
 header {
@@ -32,10 +30,6 @@ header {
 }
 
 main {
-    height: 422px;
-}
-
-section {
     padding: 10px;
     margin: auto;
     margin-top: 20px;
@@ -43,14 +37,13 @@ section {
     display: flex;
     position: relative;
     z-index: -1;
-    bottom: 0px;
-    
 }
 
 figure {
     padding: 10px;
     max-width: 200px;
     z-index: -1; 
+    margin-bottom: 10px;
     
 }
 
@@ -167,12 +160,16 @@ footer {
     text-align: center;
     font-size: 0.8em;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.226);
+    position: fixed;
+    bottom:0;
+    width: 100%;
     
 }
 
 footer a {
     text-decoration: none;
     color: var(--white-color);
+
     
 }
 
