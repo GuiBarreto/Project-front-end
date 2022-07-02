@@ -232,6 +232,10 @@ footer a:hover {
     .dp-menu a {
         width: 150px;
     }
+    
+    footer {
+        position: unset;
+    }
 
     footer {
         position: unset;
