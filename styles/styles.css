@@ -233,6 +233,10 @@ footer a:hover {
         width: 150px;
     }
 
+    footer {
+        position: unset;
+    }
+
 }
 
 @media(max-width: 715px){
